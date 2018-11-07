@@ -2,6 +2,7 @@ package com.alibaba.profiler.exception;
 
 /**
  * @author wxy on 16/6/4.
+ * 自定义异常
  */
 public class QueueException extends Exception {
 

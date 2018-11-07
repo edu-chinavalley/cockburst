@@ -11,15 +11,38 @@ import com.alibaba.profiler.util.LogUtil;
 public class QueueConfig {
 
     /**default size 100M*/
+    /**
+     * 默认块大小  100M
+     */
     private static final String QUEUE_SEGMENT_SIZE = "104857600";
+    /**
+     *
+     */
     private final static int MESSAGE_LENGTH_LIMIT = 5 * 1024 * 1024;
+
+    /**
+     * 配置文件名
+     */
     private static final String CONFIG_FILE = "profiler.properties";
 
+    /**
+     * 配置加载确认
+     */
     private volatile boolean configured = false;
 
     private boolean printExceptionStack;
+
+
+    /**
+     * 索引文件地址
+     */
     private String metaPath;
+    /**
+     * 数据文件地址
+     */
     private String dataPath;
+
+
     private int queueSegmentSize;
 
 

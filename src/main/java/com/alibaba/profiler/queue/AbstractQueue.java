@@ -6,9 +6,17 @@ import com.alibaba.profiler.util.LogUtil;
 
 /**
  * @author wxy.
+ *
+ * 抽象队列
  */
 public abstract class AbstractQueue implements Task {
+    /**
+     * 队列名称
+     */
     protected final String queueName;
+    /**
+     *
+     */
     protected boolean stopped = false;
 
     public AbstractQueue(final String queueName) {
